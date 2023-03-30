@@ -40,7 +40,6 @@ header{
     align-items: center;
     justify-content: flex-end;
     padding-right: 2.5rem;
-    /*padding-top: 0.8rem;*/
     color: var(--white);    
     margin-left: 15%;
 }
@@ -182,6 +181,71 @@ footer a {
 
     form{
         max-width: 100vh;
+    }
+}
+
+@media (min-width:600px) {
+    main{
+        display: flex;
+    }
+
+    header{
+        width: 25%;
+        height: 80vh;
+    }
+
+    .backCard{
+        left: -5%;
+        top: 35rem;
+        width: 45vh;
+        border-radius: 0.5rem;
+        padding: 0 5rem 4.4rem 0;
+        font-size: 1.8rem;
+    }
+
+    .card{
+        left: 5%;
+        top: 10rem;
+        width: 45vh;
+        height: 24vh;
+        padding-left: 4rem;
+    }
+
+    .circle{
+        width: 5rem;
+        height: 5rem;
+        margin: 2rem 0;
+    }
+
+    .secondCircle{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 2rem 0;
+    }
+
+
+    form{
+        margin: auto;
+        padding-left: 10rem;
+    }
+
+    label{
+        font-size: 2rem;
+    }
+
+    input{
+        font-size: 2rem;
+        width: 35rem;
+        padding: 1rem 0.5rem;
+        opacity: 0.5;
+    }
+
+    input[type='submit']{
+        opacity: 1;
+    }
+
+    .dates{
+        margin-top: 1.5rem;
     }
 }
   
