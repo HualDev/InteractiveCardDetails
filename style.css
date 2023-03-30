@@ -89,6 +89,48 @@ header{
     text-transform: uppercase;
 }
 
+form{
+    margin-top: 8rem;
+    padding: 2rem;
+}
+
+label{
+    text-transform: uppercase;
+    color: var(--veryDarkViolet);
+}
+
+input{
+    margin: 0.7rem 0;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 0.6rem;
+    border: 2px solid var(--lightGrayishViolet);
+}
+
+.dates{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expireDates input{
+    width: 4rem;
+}
+
+.cvc input{
+    width: 8rem;
+}
+
+input[type='submit']{
+    display: block;
+    background-color: var(--veryDarkViolet);
+    color: var(--white);
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+}
+
 
 
 
