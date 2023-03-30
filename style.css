@@ -105,6 +105,7 @@ input{
     font-size: 1.5rem;
     border-radius: 0.6rem;
     border: 2px solid var(--lightGrayishViolet);
+    width: 100%;
 }
 
 .dates{
@@ -125,28 +126,62 @@ input[type='submit']{
     display: block;
     background-color: var(--veryDarkViolet);
     color: var(--white);
-    margin: auto;
+    margin: 2rem auto auto;
     text-align: center;
     width: 100%;
     padding: 1rem;
 }
 
+.complete{
+    margin-top: 8rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.complete h1{
+    text-transform: uppercase;
+    color: var(--veryDarkViolet);
+}
 
+.complete p{
+    color: var(--darkGrayishViolet);
+    margin-top: 0;
+}
 
+button{
+    width: 80%;
+    background-color: var(--veryDarkViolet);
+    color: var(--white);
+    padding: 1rem;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1.5rem;
 
-
-
-
-
-
+}
 
 footer {
     font-size: 1rem;
     text-align: center;
+    margin-top: 3rem;
 }
 
 footer a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:450px) {
+    .backCard{
+        right: 15%;
+    }
+
+    .card{
+        left: 15%;
+    }
+
+    form{
+        max-width: 100vh;
+    }
 }
   
