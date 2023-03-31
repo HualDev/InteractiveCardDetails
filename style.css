@@ -227,6 +227,7 @@ footer a {
     form{
         margin: auto;
         padding-left: 10rem;
+        display: none;
     }
 
     label{
@@ -246,6 +247,51 @@ footer a {
 
     .dates{
         margin-top: 1.5rem;
+    }
+
+    .expireDates input{
+        width: 9rem;
+        padding-left: 2rem;
+    }
+
+    .cvc input{
+        width: 12rem;
+    }
+
+    input[type='submit']{
+        margin-top: 5rem;
+        padding: 1.5rem 1rem;
+        border-radius: 1rem;
+        font-size: 2rem;
+    }
+
+    .complete{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        margin-left: 10rem;
+    }
+
+    .complete img{
+        width: 10rem;
+    }
+
+    .complete h1{
+        font-size: 2rem;
+    }
+
+    .complete p{
+        font-size: 2rem;
+    }
+
+    button{
+        width: 40%;
+    }
+
+    footer{
+        font-size: 2rem;
+        margin-top: 6rem;
     }
 }
   
