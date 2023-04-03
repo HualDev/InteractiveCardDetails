@@ -105,12 +105,19 @@ input{
     border-radius: 0.6rem;
     border: 2px solid var(--lightGrayishViolet);
     width: 100%;
+    color: var(--veryDarkViolet);
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .dates{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.expireDates{
+    width: 100%;
 }
 
 .expireDates input{
@@ -129,6 +136,10 @@ input[type='submit']{
     text-align: center;
     width: 100%;
     padding: 1rem;
+}
+
+.error{
+    color: var(--redInputErrors);
 }
 
 .complete{
@@ -227,7 +238,6 @@ footer a {
     form{
         margin: auto;
         padding-left: 10rem;
-        display: none;
     }
 
     label{
@@ -266,7 +276,6 @@ footer a {
     }
 
     .complete{
-        display: flex;
         justify-content: center;
         width: 100%;
         margin: auto;

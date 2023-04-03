@@ -34,20 +34,24 @@
 
     <form action="">
       <label for="">Cardholder Name</label><br>
-      <input type="text" placeholder="e.g. Jane Appleseed"><br><br>
+      <input type="text" id="name" placeholder="e.g. Jane Appleseed"><br><br>
 
       <label for="">Card Number</label><br>
       <input type="text" placeholder="e.g. 1234 5678 9123 0000"><br>
+      <span class="error">Wrong format, numbers only</span>
 
       <div class="dates">
         <div class="expireDates">
           <label for="">Exp. Date (MM/YY)</label><br>
           <input type="text" placeholder="MM">
-          <input type="text" placeholder="YY">
+          <input type="text" placeholder="YY"><br>
+          <span class="error">Can't be blank</span>
         </div>
+        
         <div class="cvc">
           <label for="">CVC</label><br>
           <input type="text" placeholder="e.g. 123">
+          <span class="error">Can't be blank</span>
         </div>
       </div> 
       
