@@ -140,6 +140,7 @@ input[type='submit']{
 
 .error{
     color: var(--redInputErrors);
+    display: none;
 }
 
 .complete{
