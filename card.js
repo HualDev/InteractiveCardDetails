@@ -1,4 +1,7 @@
-let error = document.getElementById('error')
+let errorNumber = document.getElementById('errorNumber')
+const errorName = document.getElementById('errorName')
+const errorDate = document.getElementById('errorDate')
+const errorCvc = document.getElementById('errorCvc')
 const name1 = document.getElementById('name')
 const submit = document.getElementById('submit')
 let cardName = document.getElementById('cardName')
@@ -12,10 +15,14 @@ let cardCvv = document.getElementById('cardCvv')
 let formMonth = document.getElementById('formMonth')
 let formYear = document.getElementById('formYear')
 let formCvv = document.getElementById('formCvv')
+const complete = document.getElementById('complete')
+const form = document.getElementById('form')
 
 let current =''
 const maskNumber = '#### #### #### ####'
 let number = []
+
+
 
 
 
@@ -35,23 +42,37 @@ function handleInput(mask,key,arr){
         return
     }
     if(numbers.includes(key) && arr.length+1 <= mask.length){
-        error.style.display = 'none'
+        errorNumber.style.display = 'none'
         if(mask[arr.length] === ' '){
             arr.push(mask[arr.length],key)
         } else{
             arr.push(key)
         }
     } else{
-        error.style.display = 'block'
+        errorNumber.style.display = 'block'
     }
 }
 
 submit.addEventListener('click',(e)=>{
     e.preventDefault()
-    nameUser = formName.value
-    cardName.textContent = nameUser
-    cardNumber.textContent = formNumber.value
-    cardMonth.textContent = formMonth.value
-    cardYear.textContent = formYear.value
-    cardCvv.textContent = formCvv.value
+
+    if(formName.value==='' || formMonth.value==='' || formYear==='' || formCvv==='' || formNumber===''){
+        errorName.style.display='block'
+        errorDate.style.display='block'
+        errorCvc.style.display='block'
+    }
+    else{
+        errorName.style.display='none'
+        errorDate.style.display='none'
+        errorCvc.style.display='none'
+        nameUser = formName.value
+        cardName.textContent = nameUser
+        cardNumber.textContent = formNumber.value
+        cardMonth.textContent = formMonth.value
+        cardYear.textContent = formYear.value
+        cardCvv.textContent = formCvv.value
+        form.style.display = 'none'
+        complete.style.display = 'flex'
+        }
+    
 })

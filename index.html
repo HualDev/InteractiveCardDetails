@@ -32,33 +32,34 @@
       </div>
     </header>
 
-    <form action="">
+    <form action="" id="form">
       <label for="">Cardholder Name</label><br>
       <input type="text" id="formName" placeholder="e.g. Jane Appleseed"><br><br>
+      <span class="error" id="errorName">Can´t be blank</span>
 
       <label for="">Card Number</label><br>
       <input type="text" id="formNumber" placeholder="e.g. 1234 5678 9123 0000"><br>
-      <span id="error" class="error">Wrong format, numbers only</span>
+      <span id="errorNumber" class="error">Wrong format, numbers only</span>
 
       <div class="dates">
         <div class="expireDates">
           <label for="">Exp. Date (MM/YY)</label><br>
           <input type="text" id="formMonth" placeholder="MM" max="2">
           <input type="text" id="formYear" placeholder="YY"><br>
-          <span class="error">Can't be blank</span>
+          <span class="error" id="errorDate">Can't be blank</span>
         </div>
         
         <div class="cvc">
           <label for="">CVC</label><br>
           <input type="text" id="formCvv" placeholder="e.g. 123">
-          <span class="error">Can't be blank</span>
+          <span class="error" id="errorCvc">Can't be blank</span>
         </div>
       </div> 
       
       <input type="submit" id="submit" value="Confirm">
     </form>
 
-    <div class="complete">
+    <div class="complete" id="complete">
       <img src="./images/icon-complete.svg" alt="Complete Image">
       <h1>Thank you!</h1>
       <p>We've added your card details</p>
